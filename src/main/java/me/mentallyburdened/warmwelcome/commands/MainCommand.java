@@ -59,7 +59,7 @@ public class MainCommand implements CommandExecutor {
                         firstjoinMessage = firstjoinMessage.replace("<player>", player);
                     }
                     for (Player playerr : Bukkit.getOnlinePlayers()) {
-                        if (playerr.hasPermission("warmwelcome.fake.bypass")){
+                        if (playerr.hasPermission("warmwelcome.fake.bypass")) {
                             playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', fakePrefix + firstjoinMessage));
                         } else {
                             playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', firstjoinMessage));
@@ -69,30 +69,31 @@ public class MainCommand implements CommandExecutor {
             } else if (args[0].equalsIgnoreCase("fakejoin")) {
                 if (p.hasPermission("warmwelcome.fake.join")) {
                     String joinMessage = this.plugin.getConfig().getString("join-message");
-                    if(args.length == 1){
+                    if (args.length == 1) {
                         joinMessage = joinMessage.replace("<player>", sender.getName());
-                    }else{
+                    } else {
                         String player = args[1];
                         joinMessage = joinMessage.replace("<player>", player);
                     }
                     for (Player playerr : Bukkit.getOnlinePlayers()) {
-                        if (playerr.hasPermission("warmwelcome.fake.bypass")){
+                        if (playerr.hasPermission("warmwelcome.fake.bypass")) {
                             playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', fakePrefix + joinMessage));
                         } else {
                             playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', joinMessage));
                         }
-                    }                }
+                    }                
+                }
             } else if (args[0].equalsIgnoreCase("fakeleave")) {
                 if (p.hasPermission("warmwelcome.fake.leave")) {
                     String leaveMessage = this.plugin.getConfig().getString("leave-message");
-                    if(args.length == 1){
+                    if (args.length == 1) {
                         leaveMessage = leaveMessage.replace("<player>", sender.getName());
-                    }else {
+                    } else {
                         String player = args[1];
                         leaveMessage = leaveMessage.replace("<player>", player);
                     }
                     for (Player playerr : Bukkit.getOnlinePlayers()) {
-                        if (playerr.hasPermission("warmwelcome.fake.bypass")){
+                        if (playerr.hasPermission("warmwelcome.fake.bypass")) {
                             playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', fakePrefix + leaveMessage));
                         } else {
                             playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', leaveMessage));
