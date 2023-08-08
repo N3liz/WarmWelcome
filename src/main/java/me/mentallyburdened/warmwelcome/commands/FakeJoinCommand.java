@@ -17,18 +17,18 @@ public class FakeJoinCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (sender instanceof Player){
+        if (sender instanceof Player) {
             Player p = (Player) sender;
             String joinMessage = this.plugin.getConfig().getString("join-message");
             String fakePrefix = this.plugin.getConfig().getString("fake prefix");
-            if(args.length == 0){
+            if (args.length == 0) {
                 joinMessage = joinMessage.replace("<player>", sender.getName());
-            }else{
+            } else {
                 String player = args[0];
                 joinMessage = joinMessage.replace("<player>", player);
             }
             for (Player playerr : Bukkit.getOnlinePlayers()) {
-                if (playerr.hasPermission("warmwelcome.fake.bypass")){
+                if (playerr.hasPermission("warmwelcome.fake.bypass")) {
                     playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', fakePrefix + joinMessage));
                 } else {
                     playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', joinMessage));
