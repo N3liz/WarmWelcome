@@ -17,18 +17,18 @@ public class FakeLeaveCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (sender instanceof Player){
+        if (sender instanceof Player) {
             Player p = (Player) sender;
             String leaveMessage = this.plugin.getConfig().getString("leave-message");
             String fakePrefix = this.plugin.getConfig().getString("fake prefix");
-            if(args.length == 0){
+            if (args.length == 0) {
                 leaveMessage = leaveMessage.replace("<player>", sender.getName());
-            }else {
+            } else {
                 String player = args[0];
                 leaveMessage = leaveMessage.replace("<player>", player);
             }
             for (Player playerr : Bukkit.getOnlinePlayers()) {
-                if (playerr.hasPermission("warmwelcome.fake.bypass")){
+                if (playerr.hasPermission("warmwelcome.fake.bypass")) {
                     playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', fakePrefix + leaveMessage));
                 } else {
                     playerr.sendMessage(ChatColor.translateAlternateColorCodes('&', leaveMessage));
