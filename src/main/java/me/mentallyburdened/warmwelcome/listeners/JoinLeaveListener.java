@@ -19,7 +19,7 @@ public class JoinLeaveListener implements Listener {
     }
 
     @EventHandler
-    public void onJoin(PlayerJoinEvent e){
+    public void onJoin(PlayerJoinEvent e) {
 
         Player player = e.getPlayer();
         String joinMessage = this.plugin.getConfig().getString("join-message");
@@ -60,12 +60,12 @@ public class JoinLeaveListener implements Listener {
     }
 
     @EventHandler
-    public void onLeave(PlayerQuitEvent e){
+    public void onLeave(PlayerQuitEvent e) {
 
         Player player = e.getPlayer();
 
         String leaveMessage = this.plugin.getConfig().getString("leave-message");
-        if (leaveMessage != null){
+        if (leaveMessage != null) {
             leaveMessage = leaveMessage.replace("<player>", e.getPlayer().getDisplayName());
             e.setQuitMessage(ChatColor.translateAlternateColorCodes('&', leaveMessage));
         }
