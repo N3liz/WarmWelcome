@@ -10,7 +10,7 @@ A simple customisable plugin with tons of features related to a player joining/l
 - send a fake first join message
 - send a fake join/leave message
 
-- ## Commands
+ ## Commands
 - /warmwelcome - shows a list of all commands<br>
 - /warmwelcome reload - reloads the plugin<br>
 - /warmwelcome fakefirstjoin - sends a fake first join message<br>
