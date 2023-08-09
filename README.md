@@ -2,7 +2,7 @@
 A simple customisable plugin with tons of features related to a player joining/leaving your server.
 
 ## Features
-- changeable first join mesaage
+- changeable first join message
 - changeable join/leave message
 - changeable join motd
 - changeable join title
