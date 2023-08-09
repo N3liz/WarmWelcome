@@ -1,5 +1,5 @@
 # WarmWelcome
-A simple join/leave management plugin
+A simple customisable plugin with tons of features related to a player joining/leaving your server.
 
 ## Features
 - changeable first join mesaage
