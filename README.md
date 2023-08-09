@@ -1,5 +1,6 @@
 # WarmWelcome
-A simple customisable plugin with tons of features related to a player joining/leaving your server.
+A simple customisable plugin with tons of features related to a player joining/leaving your server.<br>
+WarmWelcome makes sure that your playerbase gets a warm welcome!
 
 ## Features
 - changeable first join message
