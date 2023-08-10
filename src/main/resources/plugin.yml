@@ -1,6 +1,6 @@
 name: WarmWelcome
 version: '${project.version}'
-main: me.mentallyburdened.warmwelcome.WarmWelcome
+main: me.neliz.warmwelcome.WarmWelcome
 api-version: '1.19'
 authors: [ Neliz ]
 description: A join/leave management plugin
