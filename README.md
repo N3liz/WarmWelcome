@@ -15,7 +15,7 @@ WarmWelcome makes sure that your playerbase gets a warm welcome!
 - send a fake join/leave message
 
 ## Screenshots
-  <img src="https://cdn.discordapp.com/attachments/1072614157783924858/1137761962206449674/warmwelcome.png"/>
+  <img src="https://raw.githubusercontent.com/n3liz/WarmWelcome/main/assets/image.png"/>
 
 ## License
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for details.
